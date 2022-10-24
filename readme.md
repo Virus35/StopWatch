@@ -1,4 +1,4 @@
-## 🔗Vanilla JavaScript StopWatch
+## 🔗 Vanilla JavaScript StopWatch
 [https://vishal-stop-watch.netlify.app/](https://vishal-stop-watch.netlify.app/)
 
 
