@@ -19,17 +19,23 @@ let count6=0;
 
 start.addEventListener("click",(e)=>{
     let myInterval;
-
+    if(count5==6 && count6==0){ 
+        return; 
+    }
     myInterval = setInterval(()=>{
         seconds2.innerHTML=Number(seconds2.innerHTML);
         seconds2.innerHTML=++count1;
         console.log(seconds2.innerHTML);
+        if(count5==6 && count6==0 && count2==6 && count1==0 && count3==6 && count4==0){
+            hours1.innerHTML=5;
+            hours2.innerHTML=9;
+            clearInterval(myInterval); 
+        }
         if(count1>9){
             count1=0;
             seconds2.innerHTML=count1;
             seconds1.innerHTML=Number(seconds1.innerHTML);
             seconds1.innerHTML=++count2;
-            // console.log(count1,count2,seconds1.innerHTML);
         }
         if(count2==6 && count1==0){
             count1=0;
@@ -42,7 +48,7 @@ start.addEventListener("click",(e)=>{
         if(count4>9){
             count4=0;
             minutes2.innerHTML=count4;
-            minutes2.innerHTML=Number(minutes2.innerHTML);
+            minutes1.innerHTML=Number(minutes2.innerHTML);
             minutes1.innerHTML=++count3;
         }
         if(count3==6 && count4==0){
@@ -56,22 +62,8 @@ start.addEventListener("click",(e)=>{
         if(count6>9){
             count6=0;
             hours2.innerHTML=count6;
-            hours2.innerHTML=Number(hours2.innerHTML);
+            hours1.innerHTML=Number(hours2.innerHTML);
             hours1.innerHTML=++count5;
-        }
-        if(count5==6 && count6==0 && count3==6 && count4==0 && count2==6 && count1==0){
-            count1=0;
-            count2=0;
-            count3=0;
-            count4=0;
-            count5=0;
-            count6=0;
-            seconds1.innerHTML=count2;
-            seconds2.innerHTML=count1;
-            minutes1.innerHTML=count3;
-            minutes2.innerHTML=count4;
-            hours1.innerHTML=count6;
-            hours2.innerHTML=count5;
         }
         stop.addEventListener("click",(e)=>{
             clearInterval(myInterval);
@@ -89,12 +81,12 @@ start.addEventListener("click",(e)=>{
             minutes2.innerHTML=count4;
             hours1.innerHTML=count6;
             hours2.innerHTML=count5;
+            clearInterval(myInterval);
+           
         });
         
         
     },1000);
 });
-
-
 
 
