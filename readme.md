@@ -1,5 +1,5 @@
 ## 🔗Vanilla JavaScript StopWatch
-[https://vishal-palindrome-checker-game.netlify.app/](https://vishal-palindrome-checker-game.netlify.app/)
+[https://vishal-stop-watch.netlify.app/](https://vishal-stop-watch.netlify.app/)
 
 
 ## ⭐ Vanilla JavaScript StopWatch ⭐
@@ -15,8 +15,7 @@ This is the assignment given in the **"JavaScript Full Stack Web Developer Bootc
 ### 📌 Overview 
 
 
-![PROJECT-SCREENSHOT](./vishal-palindrome-netlify.png) <br>
-![PROJECT-SCREENSHOT](./vishal-palindrome-checker-game.netlify.app_.png)
+![PROJECT-SCREENSHOT](./vishal-stopwatch.png)
 
 ### 📌 What I Learn
 
